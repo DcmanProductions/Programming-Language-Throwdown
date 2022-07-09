@@ -1,0 +1,18 @@
+{
+  "name": "node-js",
+  "version": "0.0.0",
+  "description": "NodeJS",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "pkg": "pkg --output ../bin/nodejs/",
+    "start": "./app.js"
+  },
+
+  "pkg": {
+    "assets": [ "node_modules/**/*", "src/**/*" ],
+    "targets": [ "node12-macos-x64", "node10-win-x64" ]
+  }
+}
